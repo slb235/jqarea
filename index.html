@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>area control</title>
+
+  <link rel="stylesheet" href="jq-area.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="jq-area.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $('.jq-area').jqarea();
+    });
+  </script>
+  <style>
+    @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+    
+    body {
+      width: 700px;
+      margin: auto;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    h1,h2,h3,h4,h5,h6 {
+      font-weight: 300;
+    }
+    
+  </style>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <h1>Area Control Demos</h1>
+  <h2>Simple</h2>
+  <div class="jq-area">
+  </div>
+  <xmp>
+    <div class="jq-area">
+    </div>
+  </xmp>
+
+  <h2>Preffilled & Customized</h2>
+  <div class="jq-area" data-cell-count="10000" data-cells-in-line="100" data-cell-width="4" data-cell-height="4">
+    <ol>
+      <li data-cells="3250" data-link="https://twitter.com/jochen" data-color="#69D2E7">Jochen</li>
+      <li data-cells="277" data-link="https://twitter.com/peter" data-color="#A7DBD8">Peter</li>
+      <li data-cells="3550" data-link="https://twitter.com/sven" data-color="#FA6900">Sven</li>
+    </ol>
+  </div>
+  <xmp>
+    <div class="jq-area" data-cell-count="10000" data-cells-in-line="100" data-cell-width="4" data-cell-height="4">
+      <ol>
+        <li data-cells="3250" data-link="https://twitter.com/jochen" data-color="#69D2E7">Jochen</li>
+        <li data-cells="277" data-link="https://twitter.com/peter" data-color="#A7DBD8">Peter</li>
+        <li data-cells="3550" data-link="https://twitter.com/sven" data-color="#FA6900">Sven</li>
+      </ol>
+    </div>
+  </xmp>
+  
+  <h2>& Custom Popup & Add Control</h3>
+  <div class="jq-area" data-cell-count="256" data-cells-in-line="16" data-cell-width="15" data-cell-height="15">
+    <input type="range" min="0" max="96" value="20" />
+    <div class="go-sweden" style="display: none">
+      <iframe width="480" height="240" src="http://www.youtube.com/embed/_cfLc8SNoKo" frameborder="0"></iframe>
+    </div>
+    <ol>
+      <li data-cells="21" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="14" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="14" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="10" data-color="blue">GO SWEDEN</li>
+      <li data-cells="14" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="2" data-color="blue">GO SWEDEN</li>
+      <li data-cells="14" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="6" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="14" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="14" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="25" data-color="blue">GO SWEDEN</li>
+    </ol>
+  </div>
+  
+  <xmp>
+  <div class="jq-area" data-cell-count="256" data-cells-in-line="16" data-cell-width="15" data-cell-height="15">
+    <input type="range" min="0" max="96" value="20" />
+    <div class="go-sweden" style="display: none">
+      <iframe width="480" height="240" src="http://www.youtube.com/embed/_cfLc8SNoKo" frameborder="0"></iframe>
+    </div>
+    <ol>
+      <li data-cells="21" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="14" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="14" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="10" data-color="blue">GO SWEDEN</li>
+      <li data-cells="14" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="2" data-color="blue">GO SWEDEN</li>
+      <li data-cells="14" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="6" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="14" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="14" data-color="blue">GO SWEDEN</li>
+      <li data-cells="2" data-color="yellow" data-popup=".go-sweden"></li>
+      <li data-cells="25" data-color="blue">GO SWEDEN</li>
+    </ol>
+  </div>
+  </xmp>
+</body>
+</html>
